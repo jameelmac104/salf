@@ -1,0 +1,41 @@
+    app-navbar {
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+        width: 100%;
+
+        .navbar {
+            background-color: auto;
+            color: #ffff;
+
+            transition: background-color 0.3s ease;
+
+            .nav-link {
+                color: #ffff !important;
+            }
+
+            .firm-name {
+                color: #3b98af;
+            }
+           .nav-link{
+            &.active, &:hover {
+                color: #222939 !important;
+            }
+        }
+        }
+    }
+
+    .scrolled {
+        .navbar {
+            background-color: #222939;
+
+            .firm-name {
+                color: #3b98af;
+            }
+            .nav-link{
+            &.active, &:hover {
+                color: #3b98af !important;
+            }
+        }
+        }
+    }
