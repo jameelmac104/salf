@@ -1,70 +1,70 @@
 .contact-footer {
-  background-color: #fff;
-  color: #333;
-  padding: 60px 20px;
-  font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    color: #333;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .footer-heading {
-  color: #3b98af;
-  font-weight: bold;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
+    color: #3b98af;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
 .contact-footer a {
-  color: #3b98af;
-  text-decoration: none;
+    color: #3b98af;
+    text-decoration: none;
 }
 
 .contact-footer a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .footer-subheading {
-  color: #3b98af;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-weight: 600;
+    color: #3b98af;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
 }
 
 .footer-icon {
-  font-size: 24px;
-  color: #3b98af;
-  margin-bottom: 10px;
+    font-size: 24px;
+    color: #3b98af;
+    margin-bottom: 10px;
 }
 
 .footer-divider {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 .footer-box {
-  flex: 1;
-  min-width: 250px;
-  margin: 20px;
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
 }
 
 .footer-box hr {
-  border: none;
-  border-top: 1px solid #aaa;
-  margin: 10px auto;
-  width: 80%;
+    border: none;
+    border-top: 1px solid #aaa;
+    margin: 10px auto;
+    width: 80%;
 }
 
 .footer-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
 }
 
 .footer-social p {
-  margin: 10px 0;
-  font-size: 1rem;
+    margin: 10px 0;
+    font-size: 1rem;
 }
 
 .footer-social i {
-  margin-right: 8px;
-  color: #3b98af;
+    margin-right: 8px;
+    color: #3b98af;
 }
 
 
@@ -73,78 +73,92 @@
 /// footer
 
 .footer-container {
-  background-color: #0e1018;
-  color: #fff;
-  font-family: 'Segoe UI', sans-serif;
+    background-color: #0e1018;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .footer-content {
-  border-top: 1px solid #e26c24;
-  border-bottom: 1px solid #e26c24;
+    border-top: 1px solid #e26c24;
+    border-bottom: 1px solid #e26c24;
+    justify-content: center !important;
+
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        justify-content: center !important;
+    }
 }
 
 .footer-logo-img {
-  max-width: 80px;
-  height: auto;
+    max-width: 80px;
+    height: auto;
 }
 
 .footer-brand {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #3b98af;
-  line-height: 1.2;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3b98af;
+    line-height: 1.2;
 }
 
 .footer-brand span {
-  font-weight: normal;
-  font-size: 1rem;
-  color: #ffffff;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #ffffff;
 }
 
 .footer-address,
 .footer-contact {
-  font-size: 0.95rem;
-  line-height: 1.6;
+    font-size: 0.95rem;
+    justify-content: space-between;
+    line-height: 1.6;
+    gap: 20px;
 }
 
 .map-button {
-  margin-top: 10px;
-  background-color: #e26c24;
-  border: none;
-  color: #000;
-  padding: 6px 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
+    margin-top: 10px;
+    background-color: #e26c24;
+    border: none;
+    color: #000;
+    padding: 6px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .map-button:hover {
-  background-color: #d4b075;
+    background-color: #d4b075;
 }
 
 .footer-social a {
-  color: #e26c24;
-  font-size: 1.2rem;
-  transition: color 0.3s;
+    color: #e26c24;
+    font-size: 1.2rem;
+    transition: color 0.3s;
 }
 
 .footer-social a:hover {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .footer-bottom {
-  background-color: #0e1018;
-  border-top: 1px solid #e26c24;
-  font-size: 0.85rem;
-  color: #ccc;
+    background-color: #0e1018;
+    border-top: 1px solid #e26c24;
+    font-size: 0.85rem;
+    color: #ccc;
 }
 
 .footer-bottom a {
-  color: #e26c24;
-  margin: 0 5px;
-  text-decoration: none;
+    color: #e26c24;
+    margin: 0 5px;
+    text-decoration: none;
 }
 
 .footer-bottom a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
+
+.footer-logo, .footer-address, .footer-social {
+    min-width: 320px;
+} 

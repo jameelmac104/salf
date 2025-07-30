@@ -9,3 +9,29 @@ body {
   font-weight: 500;
   font-style: normal;
 }
+
+/* Base size (desktop or large screens) */
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px; /* 1rem = 15px */
+  }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 768px) {
+  html {
+    font-size: 12px; /* 1rem = 14px */
+  }
+}
+
+/* Extra small screens (very small phones) */
+@media (max-width: 480px) {
+  html {
+    font-size: 10px; /* 1rem = 13px */
+  }
+}

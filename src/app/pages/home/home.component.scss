@@ -16,6 +16,20 @@
     }
 }
 
+@media (max-width: 600px) {
+    .home-main-content {
+        margin-top: -160px;
+
+    }
+}
+
+@media (max-width: 400px) {
+    .home-main-content {
+        margin-top: -210px;
+
+    }
+}
+
 .service {
 
     background-color: #222939;
@@ -28,7 +42,6 @@
 }
 
 .card {
-    min-width: 400px;
 }
 
 .card-content {
