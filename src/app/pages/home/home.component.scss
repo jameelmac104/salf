@@ -1,0 +1,95 @@
+.home-main-content {
+    background-image: url('../../../assets/images/home-page-main-court.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: right top !important;
+    background-size: cover;
+    background-blend-mode: color;
+    aspect-ratio: 8 / 5;
+    width: 100%;
+    height: 800px;
+    margin-top: -128px;
+
+    .content {
+        padding-top: 350px;
+        padding-left: 5%;
+        color: #ffff;
+    }
+}
+
+.service {
+
+    background-color: #222939;
+
+    .service-content {
+        margin-top: -100px;
+        gap: 20px;
+        padding: 20px;
+    }
+}
+
+.card {
+    min-width: 400px;
+}
+
+.card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .header {
+        color: #e26c24;
+
+    }
+}
+
+
+.card::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #007bff;
+    transition: width 0.5s ease;
+}
+
+.card:hover::after {
+    width: 100%;
+}
+
+.card {
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    background-color: #f9f9f9;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+    .icon {
+        transition: all 0.5s ease;
+    }
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+    .icon {
+        transform: translateY(-5px) scale(1.5);
+    }
+}
+
+// .card-content {
+//   opacity: 0.9;
+//   transition: opacity 0.5s ease;
+// }
+// .card:hover .card-content {
+//   opacity: 1;
+// }
