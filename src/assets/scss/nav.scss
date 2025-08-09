@@ -1,28 +1,27 @@
     app-navbar {
         position: sticky;
-        top: -1px;
+        top: -0px;
         z-index: 1;
         width: 100%;
 
         .navbar {
-            background-color: auto;
-            color: #ffff;
-
+            color: #222939;
+            background-color: #ffff !important;
             transition: background-color 0.3s ease;
 
             .nav-link {
-                color: #ffff !important;
+                color: #222939;
             }
 
             .firm-name {
-                color: #3b98af;
+                color: #2d91ea;
             }
 
             .nav-link {
 
                 &.active,
                 &:hover {
-                    color: #3b98af !important;
+                    color: #2d91ea !important;
                 }
             }
         }
@@ -31,16 +30,11 @@
     .scrolled {
         .navbar {
             background-color: #222939 !important;
-
-            .firm-name {
-                color: #3b98af;
-            }
-
             .nav-link {
-
+                color: #ffff;
                 &.active,
                 &:hover {
-                    color: #3b98af !important;
+                    color: #2d91ea !important;
                 }
             }
         }
@@ -62,3 +56,13 @@
             padding: 2rem;
         }
     }
+
+.firm-name {
+    color: #2d91ea;
+    font-family: 'Montserrat', 'Arial Black', Arial, sans-serif; /* or closest match */
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-size: 10px;
+    // color: #0193e8;
+    text-transform: uppercase !important;
+}

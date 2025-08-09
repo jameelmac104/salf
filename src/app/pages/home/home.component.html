@@ -1,16 +1,26 @@
 <div class="home-main-content">
     <div class="content">
-        <h2 class="highlight-title">Built on Trust, Driven by Justice</h2>
-        <p class="highlight-desc w-50">At South Asia Law Firm, we uphold excellence, fairness, and a passion for
-            justice empowering
-            thousands with 98% success in legal resolutions.</p>
+        <h2 class="highlight-title">ONE TRUSTED TEAM FOR ALL YOUR LEGAL NEEDS</h2>
+        <p class="highlight-desc w-50">SAL South Asia Legal services LLP is a team of enrolled Indian Advocates delivering reliable, cross-border legal services to NRIs and residents in Singapore, Malaysia, Indonesia, and India. With in-depth expertise in Indian law and regional legal systems, we offer a comprehensive one-stop solution for legal documentation, dispute resolution, and professional consultation—ensuring compliance, clarity, and peace of mind across jurisdictions.
+        </p>
+        <ul>           
+             <strong>We assist you with:</strong>
+            <li>Managing property and inheritance matters in India </li>
+            <li>Drafting and adjudicating Power of Attorney and notarized legal documents</li>
+            <li>Filing and managing workplace injury compensation claims (WICA)</li>
+            <li>Addressing family, immigration, business, and compliance issues</li>
+        </ul>
     </div>
+</div>
+
+<div class="m-5 pb-5">
+<app-home-page-extras ></app-home-page-extras>
 </div>
 
 <div class="service">
 <div class="w-100 d-flex justify-content-center p-2">
         <div class="service-content row w-100 flex-wrap justify-content-center align-items-stretch">
-    <div class="card p-4  text-center  col-md-4 col-sm-10">
+    <!-- <div class="card p-4  text-center  col-md-4 col-sm-10">
         <div class="icon mb-3">
             <img src="assets/images/property-search.png" alt="Property Search Icon" width="60">
         </div>
@@ -70,9 +80,25 @@
                 READ MORE &nbsp; &gt;
             </a>
         </div>
+    </div> -->
+    @for (service of services; track service.title) {
+    <div class="card p-4 text-center col-md-4 col-sm-10 mb-4">
+      <div class="icon mb-3">
+        <img [src]="service.icon" [alt]="service.alt" [width]="service?.width || '65'">
+      </div>
+      <div class="card-content w-100">
+        <h3 class="header fw-semibold">{{ service.title }}</h3>
+        <p>
+          <strong>{{ service.tagline }}</strong><br>
+          {{ service.description }}
+        </p>
+        <a [href]="service.link" class="btn btn-outline-dark rounded-pill px-4 mt-2">
+          READ MORE &nbsp; &gt;
+        </a>
+      </div>
     </div>
+  }
     </div>
 </div>
-
 </div>
 <app-footer></app-footer>

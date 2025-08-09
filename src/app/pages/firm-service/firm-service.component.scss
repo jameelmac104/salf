@@ -1,0 +1,30 @@
+@import '../../components/home-page-extras/home-page-extras.component.scss';
+.main-content {
+    background-image: url('../../../assets/images/service-main.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: right bottom -150px!important;
+    background-size: cover;
+    background-blend-mode: color;
+    aspect-ratio: 8 / 5;
+    width: 100%;
+    height: 500px;
+
+    .content {
+        padding-top: 200px;
+        padding-left: 5%;
+        color: #ffff;
+    }
+}
+
+card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .header {
+        color: #2d91ea;
+
+    }
+}
+

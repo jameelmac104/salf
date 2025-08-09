@@ -1,0 +1,62 @@
+<div *ngIf="selectedService; else noService">
+  <div class="main-content">
+    <div class="content">
+      <h2 class="highlight-title">{{ selectedService.title }}</h2>
+      <p class="highlight-desc w-50">{{ selectedService.fullDescription }}
+      </p>
+    </div>
+  </div>
+
+<!-- Services Include -->
+<section class="m-5" *ngIf="selectedService.servicesInclude?.length">
+  <h2>Our Services Include:</h2>
+  <div class="card-grid">
+    <div class="feature" *ngFor="let item of selectedService.servicesInclude">
+      <span class="material-symbols-rounded icon">
+        {{ item.icon }}
+      </span>
+      <div>
+        <strong>{{ item.title }}</strong>
+        <p *ngIf="item.description">{{ item.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="m-5" *ngIf="selectedService.whyImportant?.length">
+  <h2>Why Is This Important?</h2>
+  <div class="card-grid">
+    <div class="feature" *ngFor="let item of selectedService.whyImportant">
+      <span class="material-symbols-rounded icon">
+        {{ item.icon }}
+      </span>
+      <div>
+        <strong>{{ item.title }}</strong>
+        <p *ngIf="item.description">{{ item.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="m-5" *ngIf="selectedService.commonDocuments?.length">
+  <h2>Common Documents You Must Have:</h2>
+  <div class="card-grid">
+    <div class="feature" *ngFor="let item of selectedService.commonDocuments">
+      <span class="material-symbols-rounded icon">
+        {{ item.icon }}
+      </span>
+      <div>
+        <strong>{{ item.title }}</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</div>
+
+<app-footer></app-footer>
+
+<ng-template #noService>
+  <p>Service details not available. Please select a valid service.</p>
+</ng-template>

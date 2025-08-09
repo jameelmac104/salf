@@ -3,9 +3,13 @@
     <!-- Logo on the left -->
     <a class="navbar-brand" href="#">
       <img src="assets/images/logo.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-top">
-
     </a>
-    <h2 class="m-3 firm-name">South Asia Law Firm</h2>
+    <div class="d-flex flex-column justify-content-between align-items-center">
+      <img src="assets/images/firm-name-logo.png" alt="Logo" width="80" height="50"
+        class="d-inline-block align-text-top">
+
+      <h2 class="m-1 firm-name">South Asia Lex</h2>
+    </div>
 
     <!-- Toggler (for small screens) -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
@@ -19,13 +23,22 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
       <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" [href]="navigationPath.home">Home</a>
+          <a class="nav-link" [routerLink]="navigationPath.home" routerLinkActive="active" >Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" [href]="navigationPath.service">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
+        <li class="nav-item dropdown">
+          {{isAnyServiceActive()}}
+          <a class="nav-link dropdown-toggle" [ngClass]="{ 'active': isAnyServiceActive()}" id="dropdownMenuButton" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            @for (service of servicesList; track service.title) {
+            <a class="dropdown-item" [routerLink]="service.key" routerLinkActive="active" >
+              <img class="p-2" [src]="service.icon" [alt]="service.title" width="50">
+              {{service.title}}
+            </a>
+            }
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" [href]="navigationPath.contactUs">Contact</a>

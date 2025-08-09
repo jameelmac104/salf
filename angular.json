@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "salf": {
+    "sal": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,8 +17,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/salf",
+            "outputPath": "dist/sal",
             "index": "src/index.html",
+            "baseHref": "/sal/",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -70,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "salf:build:production"
+              "buildTarget": "sal:build:production"
             },
             "development": {
-              "buildTarget": "salf:build:development"
+              "buildTarget": "sal:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -101,6 +102,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
