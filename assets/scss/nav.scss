@@ -25,25 +25,34 @@
                 }
             }
         }
+
+        .navbar-toggler {
+            color: #2d91ea !important;
+            border-color: #2d91ea !important;
+        }
     }
 
     .scrolled {
         .navbar {
             background-color: #222939 !important;
+
             .nav-link {
                 color: #ffff;
+
                 &.active,
                 &:hover {
                     color: #2d91ea !important;
                 }
             }
         }
+
+        .navbar-toggler {
+            color: #ffff !important;
+            border-color: #ffff !important;
+        }
     }
 
-    .navbar-toggler {
-        color: #ffff !important;
-        border-color: #ffff !important;
-    }
+
 
     @media (max-width: 991px) {
 
@@ -52,17 +61,28 @@
             position: absolute;
             top: 90px;
             left: 0px;
-            background-color: #222939 !important;
+            background-color: #ffff;
             padding: 2rem;
+        }
+        .scrolled {
+            .navbar-collapse {
+                background-color: #222939 !important;
+            }
         }
     }
 
-.firm-name {
-    color: #2d91ea;
-    font-family: 'Montserrat', 'Arial Black', Arial, sans-serif; /* or closest match */
-    font-weight: bold;
-    letter-spacing: 0.2em;
-    font-size: 10px;
-    // color: #0193e8;
-    text-transform: uppercase !important;
-}
+    .firm-name {
+        color: #2d91ea;
+        font-family: 'Montserrat', 'Arial Black', Arial, sans-serif;
+        /* or closest match */
+        font-weight: bold;
+        letter-spacing: 0.2em;
+        font-size: 10px;
+        // color: #0193e8;
+        text-transform: uppercase !important;
+    }
+
+    .dropdown-item.active{
+        color: #2d91ea;
+        background-color: transparent !important;
+    }
