@@ -26,7 +26,6 @@
           <a class="nav-link" [routerLink]="navigationPath.home" routerLinkActive="active" >Home</a>
         </li>
         <li class="nav-item dropdown">
-          {{isAnyServiceActive()}}
           <a class="nav-link dropdown-toggle" [ngClass]="{ 'active': isAnyServiceActive()}" id="dropdownMenuButton" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Services
