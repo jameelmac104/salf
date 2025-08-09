@@ -5,13 +5,14 @@
     background-position: right bottom!important;
     background-size: cover;
     background-blend-mode: color;
-    aspect-ratio: 8 / 5;
     width: 100%;
     height: 500px;
 
     .content {
         padding-top: 200px;
         padding-left: 5%;
+        padding-bottom: 110px;
+        height: fit-content;
         color: #ffff;
     }
 }
