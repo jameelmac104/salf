@@ -48,6 +48,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/firm-service/firm-service.component').then((c) => c.FirmServiceComponent),
     },
     {
+        path : "contact",
+        loadComponent: () => import('./contact/contact.component').then((c) => c.ContactComponent),
+    },
+    {
         path: '',
         redirectTo: 'home',
         pathMatch: 'full'
