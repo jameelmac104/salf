@@ -5,12 +5,12 @@
         </span>
         <ul class="dropdown_menu dropdown_menu-4">
             <li class="dropdown_item-1" style="background-color: #25D366; color: white;">
-                <a [href]="'https://wa.me/919876543210'" target="_blank">
+                <a [href]="'https://wa.me/+9198415 15182'" target="_blank">
                     <img src="'../../../../assets/images/whatsapp-icon.png" width="30">
                 </a>
             </li>
             <li class="dropdown_item-1" style="background-color: #c02c22; color: white;">
-                <a  href="https://mail.google.com/mail/?view=cm&fs=1&to=someone@example.com&su=Hello&body=Message%20goes%20here" target="_blank">
+                <a  href="mailto:johnpaul@southasialawfirm.com?subject=Hello&body=Message goes here" target="_blank">
                 <img src="'../../../../assets/images/mail-icon.png" width="30" ></a>
             </li>
         </ul>
@@ -20,7 +20,13 @@
     <div class="container text-center">
 
         <h2 class="footer-heading">GET IN TOUCH</h2>
-        <p>Feel free to <a [routerLink]="'/contact'">contact us</a> for any query regarding web development, we are
+        <p>Feel free to
+            @if(!contactPage) {
+             <a [routerLink]="'/contact'">contact us</a>
+            } @else {
+                contact us
+            }
+              for any query regarding web development, we are
             happy to help
             you…</p>
 
@@ -39,8 +45,7 @@
                 <hr>
                 <p class="footer-label">Contact Details</p>
                 <span class="material-symbols-rounded footer-icon">mail</span>
-                <p><a href="mailto:contact@southasialawfirm.in">contact{{'@'}}southasialawfirm.in</a><br>
-                    <a href="mailto:southasialawfirm.in@gmail.com">southasialawfirm.in{{'@'}}gmail.com</a>
+                <p><a href="mailto:johnpaul@southasialawfirm.com">johnpaul{{'@'}}southasialawfirm.com</a><br>
                 </p>
             </div>
 
@@ -49,8 +54,7 @@
                 <hr>
                 <p class="footer-label"> </p> <!-- Optional label -->
                 <span class="material-symbols-rounded footer-icon">call</span>
-                <p><a href="tel:+918055944185">+91 80349 222850</a><br>
-                    <a href="tel:+917020683744">+91 72306 898940</a>
+                <p><a href="tel:+9198415 15182">+91 98415 15182</a><br>
                 </p>
             </div>
         </div>
@@ -102,18 +106,18 @@
 
 
         <!-- Social Icons -->
-        <div class="footer-social d-flex gap-2 justify-content-center col-md-3 col-sm-10">
+        <!-- <div class="footer-social d-flex gap-2 justify-content-center col-md-3 col-sm-10">
             <a href="#"><span class="material-symbols-rounded">group</span></a>
             <a href="#"><span class="material-symbols-rounded">facebook</span></a>
             <a href="#"><span class="material-symbols-rounded">smart_display</span></a>
-        </div>
+        </div> -->
 
     </div>
 
     <div class="footer-bottom text-center py-3">
         © 2025 South Asia Law Firm. All rights reserved.
-        <a href="#">Disclaimer</a> |
+        <!-- <a href="#">Disclaimer</a> |
         <a href="#">Privacy Policy</a> |
-        <a href="#">Site Map</a>
+        <a href="#">Site Map</a> -->
     </div>
 </footer>
