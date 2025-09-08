@@ -1,0 +1,1 @@
+import{a as c}from"./chunk-AQIDDY2B.js";import{b as o,o as n,v as a}from"./chunk-NSIFQVTZ.js";var p=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=o({type:t,selectors:[["app-contact"]],standalone:!0,features:[a],decls:1,vars:0,template:function(e,r){e&1&&n(0,"app-footer")},dependencies:[c]})};export{p as ContactComponent};
